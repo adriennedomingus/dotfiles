@@ -31,5 +31,6 @@ sudo gem install bundler;
 curl -sSL https://get.rvm.io | bash -s stable --ruby;
 ln -sn ~/personal_projects/dotfiles/gitconfig.symlink ~/.gitconfig;
 mv ~/.zshrc ~/.zshrc.bak;
+cp ~/personal_projects/dotfiles/robbyrussell-adrienne.zsh-theme ~/.oh-my-zsh.themes/;
 ln -sn ~/personal_projects/dotfiles/zshrc.symlink ~/.zshrc;
 source ~/.zshrc;

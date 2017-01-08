@@ -1,13 +1,15 @@
 #!/bin/bash
-
+sudo xcodebuild -license
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" # Homebrew
 brew update;
 brew doctor;
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
-brew install tree;
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"; # oh-my-zsh
 brew install wget;
+brew cask install dropbox;
+brew cask install 1password;
 brew cask install flux;
-brew cask install sourcetree;
 brew cask install spectacle;
+brew cask install atom;
 brew cask install pycharm;
 brew cask install google-chrome;
 brew cask install google-play-music-desktop-player;
@@ -25,6 +27,7 @@ export WORKON_HOME=~/Envs;
 source /usr/local/bin/virtualenvwrapper.sh;
 ln -sn ~/personal_projects/dotfiles/gitconfig.symlink ~/.gitconfig;
 mv ~/.zshrc ~/.zshrc.bak;
-cp ~/personal_projects/dotfiles/robbyrussell-adrienne.zsh-theme ~/.oh-my-zsh/themes/;
+ln -sn ~/personal_projects/dotfiles/robbyrussell-adrienne.zsh-theme ~/.oh-my-zsh/themes/;
 ln -sn ~/personal_projects/dotfiles/zshrc.symlink ~/.zshrc;
 source ~/.zshrc;
+touch ~/.hushlogin;

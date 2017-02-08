@@ -21,6 +21,7 @@ brew install libxmlsec1;
 brew install homebrew/versions/swig304;
 brew install pkg-config libffi;
 brew install postgresql;
+brew install heroku;
 sudo easy_install pip;
 pip install virtualenvwrapper;
 export WORKON_HOME=~/Envs;

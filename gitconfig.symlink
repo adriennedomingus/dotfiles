@@ -1,8 +1,8 @@
 [user]
 	name = Adrienne Domingus
 	email = adrienne.domingus@gmail.com
+	signingkey = 923F37FF1F1DBA07
 [core]
-	editor = atom --wait
 	excludesfile = /Users/adrienne/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"

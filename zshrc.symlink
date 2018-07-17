@@ -83,22 +83,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias today='open http://today.turing.io'
-alias 3mod='cd ~/Turing/3module/'
-alias 2mod='cd ~/Turing/2module/'
-alias 1mod='cd ~/Turing/1module/'
-alias portfolio='cd ~/Turing/portfolios/students/1511/adrienne-domingus'
-alias blog='cd ~/Turing/2module/adriennedomingus.github.io/'
-alias exercisms='cd ~/exercism/ruby/'
-alias practice='cd ~/Turing/practice/'
 alias ..='cd ..'
 alias dbstart="postgres -D /usr/local/var/postgres"
 alias gc='git commit'
 alias gs='git status'
 alias gp='git push'
-alias personal='cd ~/personal_projects/'
-alias be='bundle exec'
-alias rt='rake test'
+alias shell='python manage.py shell_plus'
+alias pm='python manage.py'
 
 export NVM_DIR="/Users/adrienne/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

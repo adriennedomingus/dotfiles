@@ -53,11 +53,11 @@ plugins=(git emoji)
 
 # User configuration
 
-export PATH="/Users/adriennedomingus/.rvm/gems/ruby-2.2.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/adriennedomingus/.rvm/bin"
+# export PATH="/Users/adriennedomingus/.rvm/gems/ruby-2.2.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/adriennedomingus/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.cargo/env
+# source $HOME/.cargo/env
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -68,9 +68,6 @@ source $HOME/.cargo/env
 # else
 #   export EDITOR='mvim'
 # fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
@@ -85,30 +82,6 @@ source $HOME/.cargo/env
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ..='cd ..'
-alias dbstart="postgres -D /usr/local/var/postgres"
 alias gc='git commit'
 alias gs='git status'
 alias gp='git push'
-alias shell='python manage.py shell_plus'
-alias pm='python manage.py'
-alias frontendfix='npm install && npm run dev'
-alias test='NOMIGRATIONS=1 python manage.py test'
-
-eval "$(rbenv init -)"
-
-export NVM_DIR="/Users/adrienne/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-export PATH=~"$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-export WORKON_HOME=~/Envs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
-source /usr/local/bin/virtualenvwrapper.sh
-
-export PATH=~/devtools/bin:$PATH
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/adriennedomingus/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/adriennedomingus/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/adriennedomingus/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/adriennedomingus/google-cloud-sdk/completion.zsh.inc'; fi
